@@ -1,0 +1,59 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+body { background-color: #0b0b0b; color: white; height: 100vh; overflow: hidden; }
+.wrapper { padding: 30px 60px; height: 100%; display: flex; flex-direction: column; }
+
+/* HEADER */
+header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.header-left { display: flex; align-items: center; gap: 50px; }
+.logo { color: #4CAF50; font-size: 24px; font-weight: bold; }
+.main-nav a { color: white; text-decoration: none; font-size: 14px; opacity: 0.5; margin-right: 20px; }
+.active-link { opacity: 1 !important; border-bottom: 2px solid #4CAF50; padding-bottom: 5px; }
+
+.header-right { display: flex; align-items: center; gap: 15px; }
+.search-box { position: relative; }
+.search-box input { background: white; border: none; padding: 8px 30px 8px 15px; border-radius: 20px; width: 160px; }
+.search-icon { position: absolute; right: 10px; top: 6px; color: #888; font-size: 14px; }
+.cart-icon { background: white; color: black; width: 32px; height: 32px; border-radius: 50%; display: flex; justify-content: center; align-items: center; }
+.menu-icon { display: flex; flex-direction: column; gap: 4px; cursor: pointer; margin-left: 5px; }
+.menu-icon span { width: 22px; height: 2px; background: white; }
+
+/* MAIN LAYOUT */
+main { flex: 1; display: flex; align-items: center; justify-content: space-between; position: relative; }
+
+/* LEFT */
+.left-content { width: 250px; z-index: 2; }
+.title-white { font-size: 50px; line-height: 1; font-weight: 900; }
+.title-green { font-size: 50px; line-height: 0.8; color: #1a1a1a; -webkit-text-stroke: 1px #4CAF50; font-weight: 900; }
+.price-section { display: flex; align-items: center; margin: 25px 0; }
+.green-line { width: 60px; height: 2px; background: #4CAF50; margin-right: 15px; }
+.main-price { color: #4CAF50; font-size: 32px; font-weight: bold; }
+
+.mini-card { background: #dcdcdc; width: 140px; height: 180px; border-radius: 30px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 10px; }
+.shoe-small { width: 110%; transform: rotate(15deg); filter: drop-shadow(0 10px 8px rgba(0,0,0,0.3)); }
+.price-small { color: #333; font-weight: bold; margin-top: 10px; }
+
+/* CENTER */
+.center-content { flex: 1; display: flex; flex-direction: column; align-items: center; }
+.big-green-card { background: #5eb878; width: 500px; height: 320px; border-radius: 45px; position: relative; display: flex; justify-content: center; align-items: center; }
+.white-glow { width: 240px; height: 240px; background: rgba(255,255,255,0.2); border-radius: 50%; position: absolute; }
+.shoe-big { width: 115%; z-index: 5; transform: rotate(15deg) translateY(-15px); filter: drop-shadow(0 40px 35px rgba(0,0,0,0.45)); }
+.add-button { position: absolute; bottom: 25px; right: 25px; background: #2e7d32; width: 45px; height: 45px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 24px; cursor: pointer; }
+
+/* SELECTION */
+.selection-container { width: 500px; margin-top: 35px; }
+.select-group { margin-bottom: 25px; }
+.select-group label { font-size: 11px; color: #666; display: block; margin-bottom: 10px; letter-spacing: 1px; }
+.options-row span { margin-right: 20px; font-size: 13px; opacity: 0.5; cursor: pointer; }
+.active-opt { color: #4CAF50; opacity: 1 !important; font-weight: bold; border-bottom: 2px solid #4CAF50; padding-bottom: 3px; }
+.dots-row { display: flex; gap: 12px; }
+.dot { width: 13px; height: 13px; border-radius: 50%; cursor: pointer; }
+.c1 { background: #2e7d32; } .c2 { background: #a5d6a7; } .c3 { background: white; } .c4 { background: #b71c1c; }
+
+/* SOCIAL RIGHT */
+.social-box { position: absolute; right: 0; top: 50%; transform: translateY(-50%); }
+.social-inner { background: #2e7d32; padding: 40px 12px; border-radius: 20px; display: flex; flex-direction: column; align-items: center; }
+.social-inner p { writing-mode: vertical-rl; transform: rotate(180deg); font-size: 12px; margin: 15px 0; opacity: 0.7; cursor: pointer; }
+
+/* FOOTER */
+footer { display: flex; justify-content: flex-end; }
+.footer-btn { background: #5eb878; color: #121212; padding: 15px 45px; border-radius: 25px 25px 0 0; font-weight: bold; cursor: pointer; }
